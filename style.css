@@ -37,7 +37,7 @@ body{
 .card{
     background-color: white;
     display: grid;
-    grid-teplate-columns:
+    grid-template-columns:
     repeat(
         auto-fit,
         minmax(150px, 1fr)
