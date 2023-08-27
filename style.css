@@ -3,8 +3,9 @@
     --Light-gray: hsl(212, 45%, 89%);
     --Grayish-blue: hsl(220, 15%, 55%);
     --Dark-blue: hsl(218, 44%, 22%);    
-    --Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-    -- Weights: 400, 700
+    
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+    
     
 }
 *{
@@ -16,34 +17,85 @@
 }
 body{
     background-color: var(--Light-gray);
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.card{
-    background: var(--white);
+.attribution{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Dark-blue);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    margin-top: -20px;
+}
+.pca{
+    color: rgb(30, 133, 202); 
+}
+.card{
+    background-color: white;
+    display: grid;
+    grid-teplate-columns:
+    repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+    );
+    gap: 32px;
     justify-content: center;
     align-items: center;
-    width: 320px;
+    width: 300px;
     height: 480px;
     border-radius: 20px;
     overflow: hidden;
-    
+    margin-top: 30px;
 }
 .card-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    width: 300px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 2.3rem;
+    position: relative;
+    
 }
 .qr1{
-    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    box-sizing: 120px;
-    padding: 15px;
+    border: 15px;
+}
+.qr1 .qr2{
+    width: 90%;
+    border-radius: 15px;
+    margin: 1rem;
+}
+.text-1{
+    display: swap;
+    justify-content: center;
+    align-items: column;
+    text-align: center;
+    margin-top: -30px;
+    color: var(--Dark-blue);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    width: 88%;
+    
+}
+.p-1{
+    display: swap;
+    justify-content: center;
+    align-items: column;
+    text-align: center;
+    margin-top: -18px;
+    color: var(--Grayish-blue);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    width: 87%;
+    border: 15px;
 }
